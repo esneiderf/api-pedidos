@@ -1,0 +1,524 @@
+{
+  "info": {
+    "name": "API Pedidos - NestJS",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "categoria",
+      "item": [
+        {
+          "name": "POST /categoria",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nombre\": \"Tecnolog\\u00eda\"\n}"
+            },
+            "url": {
+              "raw": "http://localhost:3000/categoria",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "categoria"
+              ]
+            }
+          }
+        },
+        {
+          "name": "GET /categoria",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {},
+            "url": {
+              "raw": "http://localhost:3000/categoria",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "categoria"
+              ]
+            }
+          }
+        },
+        {
+          "name": "GET /categoria/1",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {},
+            "url": {
+              "raw": "http://localhost:3000/categoria/1",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "categoria",
+                "1"
+              ]
+            }
+          }
+        },
+        {
+          "name": "PUT /categoria/1",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nombre\": \"Electr\\u00f3nica\"\n}"
+            },
+            "url": {
+              "raw": "http://localhost:3000/categoria/1",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "categoria",
+                "1"
+              ]
+            }
+          }
+        },
+        {
+          "name": "DELETE /categoria/1",
+          "request": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {},
+            "url": {
+              "raw": "http://localhost:3000/categoria/1",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "categoria",
+                "1"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "producto",
+      "item": [
+        {
+          "name": "POST /producto",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nombre\": \"Mouse\",\n  \"precio\": 75.5,\n  \"categoriaId\": 1\n}"
+            },
+            "url": {
+              "raw": "http://localhost:3000/producto",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "producto"
+              ]
+            }
+          }
+        },
+        {
+          "name": "GET /producto",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {},
+            "url": {
+              "raw": "http://localhost:3000/producto",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "producto"
+              ]
+            }
+          }
+        },
+        {
+          "name": "GET /producto/1",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {},
+            "url": {
+              "raw": "http://localhost:3000/producto/1",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "producto",
+                "1"
+              ]
+            }
+          }
+        },
+        {
+          "name": "PUT /producto/1",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"precio\": 99.99\n}"
+            },
+            "url": {
+              "raw": "http://localhost:3000/producto/1",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "producto",
+                "1"
+              ]
+            }
+          }
+        },
+        {
+          "name": "DELETE /producto/1",
+          "request": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {},
+            "url": {
+              "raw": "http://localhost:3000/producto/1",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "producto",
+                "1"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "usuarios",
+      "item": [
+        {
+          "name": "POST /usuarios",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nombre\": \"Juan P\\u00e9rez\",\n  \"correo\": \"juan@example.com\"\n}"
+            },
+            "url": {
+              "raw": "http://localhost:3000/usuarios",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "usuarios"
+              ]
+            }
+          }
+        },
+        {
+          "name": "GET /usuarios",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {},
+            "url": {
+              "raw": "http://localhost:3000/usuarios",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "usuarios"
+              ]
+            }
+          }
+        },
+        {
+          "name": "GET /usuarios/1",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {},
+            "url": {
+              "raw": "http://localhost:3000/usuarios/1",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "usuarios",
+                "1"
+              ]
+            }
+          }
+        },
+        {
+          "name": "PUT /usuarios/1",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nombre\": \"Juan Actualizado\"\n}"
+            },
+            "url": {
+              "raw": "http://localhost:3000/usuarios/1",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "usuarios",
+                "1"
+              ]
+            }
+          }
+        },
+        {
+          "name": "DELETE /usuarios/1",
+          "request": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {},
+            "url": {
+              "raw": "http://localhost:3000/usuarios/1",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "usuarios",
+                "1"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "pedido",
+      "item": [
+        {
+          "name": "POST /pedido",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"fecha\": \"2025-07-02\",\n  \"estado\": \"pendiente\",\n  \"usuarioId\": 1,\n  \"productosIds\": [\n    1\n  ]\n}"
+            },
+            "url": {
+              "raw": "http://localhost:3000/pedido",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "pedido"
+              ]
+            }
+          }
+        },
+        {
+          "name": "GET /pedido",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {},
+            "url": {
+              "raw": "http://localhost:3000/pedido",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "pedido"
+              ]
+            }
+          }
+        },
+        {
+          "name": "GET /pedido/1",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {},
+            "url": {
+              "raw": "http://localhost:3000/pedido/1",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "pedido",
+                "1"
+              ]
+            }
+          }
+        },
+        {
+          "name": "PUT /pedido/1",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"estado\": \"enviado\"\n}"
+            },
+            "url": {
+              "raw": "http://localhost:3000/pedido/1",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "pedido",
+                "1"
+              ]
+            }
+          }
+        },
+        {
+          "name": "DELETE /pedido/1",
+          "request": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {},
+            "url": {
+              "raw": "http://localhost:3000/pedido/1",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "pedido",
+                "1"
+              ]
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
